@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+  #main{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+  }
+  #nav{
+    height: 80px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #nav img{
+    height: 100px;
+    width: 100px;
+  }
+  #prt2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    padding: 20px;
+    color: #fff;
+    gap: 30px;
+    font-family: poppins;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  #prt2 button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #b4db47;
+    font-weight: 600;
+    color: #9725cc;
+  }
+  #center{
+    height: 90%;
+    width: 100%;
+    background-color: #a7d355;
+  }
+  #center img{
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: contain;
+    position: relative;
+    z-index: 99;
+  }
+  #scroll{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    /* height: 120px; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  #scroll::-webkit-scrollbar{
+    display: none;
+  }
+  
+  #scroll h1{
+    display: inline-block;
+    color: #fff;
+    font-size: 110px;
+    font-family: poppins;
+    text-transform: uppercase;
+    margin-right: 20px;
+    letter-spacing: 4px;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  #scroll2{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    /* height: 120px; */
+    z-index: 100  ;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  #scroll2::-webkit-scrollbar{
+    display: none;
+  }
+  #scroll2 h1{
+    display: inline-block;
+    font-size: 110px;
+    font-family: poppins;
+    text-transform: uppercase;
+    margin-right: 20px;
+    color: transparent;
+    letter-spacing: 4px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #7120bd;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+  }
+  #scroll3{
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    /* height: 120px; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  #scroll3::-webkit-scrollbar{
+    display: none;
+  }
+  #scroll3 h1{
+    display: inline-block;
+    font-size: 110px;
+    font-family: poppins;
+    text-transform: uppercase;
+    margin-right: 20px;
+    letter-spacing: 4px;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  #text{
+    font-size: 30px;
+    margin-left: 15%;
+    margin-top: 20px;
+    position: absolute;
+    font-family: poppins;
+    width: 70%;
+    color: #75925a;
+    /* background-color: red; */
+    z-index: 999;
+    text-align: center;
+    top: 20%;
+    text-transform: uppercase; 
+  }
+  
+  @keyframes scroll {
+    0%{    
+      transform: translateX(calc(-100% - 22px))
+    }
+    100%{
+      transform: translateX(0);
+    }
+    
+  }
